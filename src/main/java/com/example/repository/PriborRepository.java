@@ -10,7 +10,7 @@ import java.util.List;
  * Created by yasha on 28.09.2016.
  */
 @Repository
-public interface PriborRepository extends CrudRepository<Pribor, Long> {
+public interface PriborRepository {
 
     public void addPribor(Pribor pribor);
     public void updatePribor(Pribor pribor);

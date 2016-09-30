@@ -14,11 +14,6 @@ public class MetrologApplication {
 	@Autowired
 	private PriborController controller;
 
-	@PostConstruct
-	public void init()
-	{
-		controller.showData();
-	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(MetrologApplication.class, args);
