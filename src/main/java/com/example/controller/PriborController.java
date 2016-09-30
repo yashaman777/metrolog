@@ -1,15 +1,17 @@
-package com.example;
+package com.example.controller;
 
-import com.example.Head.Pribor;
+import com.example.domain.Pribor;
 import com.example.repository.PriborRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
 
 /**
  * Created by yasha on 28.09.2016.
  */
 @Component
-public class Controller {
+@Controller
+public class PriborController {
 
     @Autowired
     private PriborRepository priborRepository;
@@ -19,7 +21,7 @@ public class Controller {
     {
                for(Pribor pribor : priborRepository.findAll())
                {
-                   System.out.println("" + pribor.getName());
+                   System.out.println("" + pribor.getName()+ "  "+pribor.getType());
                }
         }
     }

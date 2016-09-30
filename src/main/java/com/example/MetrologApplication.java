@@ -1,6 +1,6 @@
 package com.example;
 
-import com.example.repository.PriborRepository;
+import com.example.controller.PriborController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -12,7 +12,7 @@ public class MetrologApplication {
 
 
 	@Autowired
-	private Controller controller;
+	private PriborController controller;
 
 	@PostConstruct
 	public void init()
