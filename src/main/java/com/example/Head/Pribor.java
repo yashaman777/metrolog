@@ -13,9 +13,6 @@ import javax.persistence.*;
 @Setter
 public class Pribor {
     @Id
-    @Getter
-    @Setter
-
     @Column
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
@@ -24,17 +21,17 @@ public class Pribor {
     {return id;}
 
     @Column
-    @Getter
-    @Setter
-
     private String number;
-    @Column
-    @Getter
-    @Setter
 
+
+    @Column
     private int invent_number;
     @Column
     private String name;
+
+    public String getName()
+    {return name;}
+
     @Column
     private String type;
     @Column

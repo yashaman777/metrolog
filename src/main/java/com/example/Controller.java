@@ -19,7 +19,7 @@ public class Controller {
     {
                for(Pribor pribor : priborRepository.findAll())
                {
-                   System.out.println("" + pribor.getId());
+                   System.out.println("" + pribor.getName());
                }
         }
     }
